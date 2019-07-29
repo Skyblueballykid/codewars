@@ -62,3 +62,10 @@ defmodule Series do
     n + sum(n-1)
   end
 end
+
+# count by x (first n multiples of x)
+defmodule Count do
+  def count_by(x, n) do
+    Enum.take_every(x..(x*n), x)
+  end
+end
