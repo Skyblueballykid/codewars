@@ -34,3 +34,31 @@ defmodule Detector do
   end
 end
 
+# Sentence smash
+defmodule SentenceSmasher do
+  def smash(words) do
+    Enum.join(words, " ")
+  end
+end
+
+# Convert a string to a number!
+defmodule Numerify do
+  def string_to_number(str) do
+    String.to_integer(str)
+  end
+end
+
+# Summation
+defmodule Series do
+  def summation(n) do
+    Enum.sum(1..n)
+  end
+
+  def sum(0) do
+    0
+  end
+
+  def sum(n) do
+    n + sum(n-1)
+  end
+end
